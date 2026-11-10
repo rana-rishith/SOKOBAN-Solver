@@ -1,6 +1,6 @@
 # SOKOBAN Solver
 
-A program that solves the warehouse box-pushing puzzle. The program uses A\*
+This program solves the warehouse box-pushing puzzle. The program uses A\*
 search with deadlock detection. A window shows each move that the program
 finds.
 
@@ -93,9 +93,9 @@ Many positions cannot give a solution. The program finds two types of lost
 position.
 
 **Simple deadlock.** The box is on a square from which no target is possible.
-A corner is an example. The wall between two corners is also an example. The
-program finds these squares before the search starts. One lookup is then
-sufficient.
+This type of square is a dead square. A corner is an example. The wall between
+two corners is also an example. The program finds all the dead squares before
+the search starts. One lookup is then sufficient.
 
 **Freeze deadlock.** The box cannot move on the horizontal axis, and the box
 cannot move on the vertical axis. Walls, dead squares or other boxes hold the
