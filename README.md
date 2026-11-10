@@ -146,7 +146,13 @@ sokoban/solver.py       Distances, deadlock tests, the match, the A* search
 sokoban/gui.py          The window, the search thread, the replay
 levels/levels.sok       Twelve levels
 tests/test_sokoban.py   25 tests
+docs/                   Three PDF documents and the slide set
 ```
+
+The program does not use the `docs` folder. The script `docs/build_docs.py`
+makes these documents. The script solves all the levels to get the numbers in
+the tables. Thus the documents always agree with the code. The script needs
+the `reportlab` and `python-pptx` packages, but the program does not.
 
 The modules depend in one direction only: `gui` uses `solver`, and `solver`
 uses `game`. The `game` module knows nothing about the search. The `solver`
