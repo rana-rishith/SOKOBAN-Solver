@@ -1,0 +1,3 @@
+# Keep generated documents byte-exact; line-ending conversion corrupts them.
+*.pdf  binary
+*.pptx binary
